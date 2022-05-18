@@ -1,6 +1,9 @@
 # Fahrplan
 
-eine kleine Webanwendung, die live die nächsten Events in verschiedenen Räumen anzeigt. 
+Eine kleine Webanwendung, die live die nächsten Events in verschiedenen Räumen anzeigt. 
 
 ## Install
-Dockerfile bauen -> deployen mit port 80.
+```
+docker build -t fahrplan_img .
+docker run -d -p 80:80 --name fahrplan fahrplan_img
+```

@@ -44,6 +44,45 @@
     text-decoration-color: #3e7bff;
   }
 
+  .border-DJ{
+    border-color: #3e7bff;
+  }
+
+  .text-DJ{
+    color: #3e7bff;
+  }
+
+  .text-DJ:hover{
+    text-decoration: underline;
+    text-decoration-color: #3e7bff;
+  }
+
+  .border-VJ{
+    border-color: #ec3eff;
+  }
+
+  .text-VJ{
+    color: #ec3eff;
+  }
+
+  .text-VJ:hover{
+    text-decoration: underline;
+    text-decoration-color: #ec3eff;
+  }
+
+  .border-Performance{
+    border-color: #f2ff3e;
+  }
+
+  .text-Performance{
+    color: #f2ff3e;
+  }
+
+  .text-Performance:hover{
+    text-decoration: underline;
+    text-decoration-color: #f2ff3e;
+  }
+
   .border-ArtCulture{
     border-color: #F96A38;
   }
@@ -234,25 +273,17 @@
 
 
   <div class="card-group">
-    <div class="card-column" style="width: 20%;" id="cards_MediaTheater">
+    <div class="card-column" style="width: 50%;" id="cards_Music-LargeStudio">
 
     </div>
-    <div class="card-column" style="width: 20%;"  id="cards_LectureRoom">
-
-    </div>
-    <div class="card-column" style="width: 20%;"  id="cards_BlueSaloon">
-
-    </div>
-    <div class="card-column" style="width: 20%;"  id="cards_Room115">
-
-    </div>
-    <div class="card-column" style="width: 20%;"  id="cards_Room112">
+    <div class="card-column" style="width: 50%;"  id="cards_Visuals-LargeStudio">
 
     </div>
   </div>
   <div>
-    <p class="text-center"><a href="lounge.html">Click here to see Lounge schedule</a> | gpn20_v1.2, MIT Licence vspace.one e.V. 2018 - 2022</p>
+    <p class="text-center"><a href="index.html">Click here to see general schedule</a> | gpn20_v1.2, MIT Licence vspace.one e.V. 2018 - 2022</p>
   </div>
+
 
   <script>
 
@@ -284,12 +315,12 @@
   itemsPerRoom[5] = [];
   itemsPerRoom[6] = [];
 
-  rooms = ["MediaTheater","LectureRoom","BlueSaloon","Room115","Room112", "ExhibitionBioMedia", "Unlocated"];
+  rooms = ["Visuals-LargeStudio","Music-LargeStudio"];
 
 
   $( document ).ready(function() {
     i = 0
-    $.getJSON("https://cfp.gulas.ch/gpn20/schedule/export/schedule.json", function (data) {
+    $.getJSON("https://cfp.gulas.ch/gpn20-lounge/schedule/export/schedule.json", function (data) {
       dat = new Date(Date.now());
       dat.setDate(dat.getDate());
       dat.setMinutes(dat.getMinutes() - 10);

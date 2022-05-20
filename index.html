@@ -289,7 +289,7 @@
 
   $( document ).ready(function() {
     i = 0
-    $.getJSON("https://cfp.gulas.ch/gpn20/schedule/export/schedule.json", function (data) {
+    $.getJSON("https://cfp.gulas.ch/gpn20/schedule/export/schedule.json?lang=en", function (data) {
       dat = new Date(Date.now());
       dat.setDate(dat.getDate());
       dat.setMinutes(dat.getMinutes() - 10);

@@ -389,15 +389,11 @@
 
       $.each(items, function(i){
         $.each(rooms, function(r){
-          
-          console.log(items[i].room, rooms[r])
           if(items[i].room == rooms[r]){
             itemsPerRoom[r].push(items[i]);
           }
         });
       });
-
-      console.log(itemsPerRoom)
 
       var template = $('#news_template').html();
       Mustache.parse(template);   // optional, speeds up future uses

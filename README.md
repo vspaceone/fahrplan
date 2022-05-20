@@ -1,9 +1,8 @@
 # Fahrplan
+de: Eine kleine Webanwendung, die live die nächsten Events in verschiedenen Räumen anzeigt. Eine live Version gibt es hier [https://fahrplan.vspace.one/](https://fahrplan.vspace.one/)
 
-Eine kleine Webanwendung, die live die nächsten Events in verschiedenen Räumen anzeigt. 
+Der Link zu den Lounges gibt es hier: https://fahrplan.vspace.one/lounge.html
 
-## Install
-```
-docker build -t fahrplan_img .
-docker run -d -p 80:80 --name fahrplan fahrplan_img
-```
+en: A small web app that shows the next talks in the different room. Please find a live version here: [https://fahrplan.vspace.one/](https://fahrplan.vspace.one/)
+
+The link to the lounges is here: https://fahrplan.vspace.one/lounge.html
